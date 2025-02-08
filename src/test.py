@@ -14,7 +14,7 @@ class SurahMedia:
             print("media folder created")
         else:
             print("media folder already exists")
-        self.get_surah_list()
+        #self.get_surah_list()
         
     def get_surah_list(self):
         chapter_url = f"{self.base_url}/chapters"
@@ -99,7 +99,7 @@ class SurahMedia:
 
 test = SurahMedia()
 test.get_reciter_list()
-print(test.reciter_dict[0])
+print(test.reciter_dict)
 #test.get_surah_audio(114,7)
 #test.play_surah_audio(114)
 
